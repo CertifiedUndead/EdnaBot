@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', () => {
   console.log("Hello Dahling."); 
-client.login('NDcxMzgzNTIyODA5MjE3MDM5.Djtk0g.55VY6fAQR68lbSWJWJngDuC25Yg');
+client.login(process.env.BOT_TOKEN);
 });
 client.on('message', msg => {
   if (msg.content == 'work') {
